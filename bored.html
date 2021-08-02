@@ -1,0 +1,42 @@
+  <!doctype html>
+    <html>
+    <style type="text/css">
+
+        body{
+            font-family:sans-serif;
+            background-color: white;
+}
+        .canvasProcessing {
+        position: absolute;
+    }
+</style>
+<h3><a href="https://allthesquares.github.io/"><-- Return to main page</a></h3>
+<p class = "canvasProcessing" align = 'center'> 
+    <!--This draws the Canvas on the webpage -->
+      <canvas id="mycanvas"></canvas> 
+    </p>
+ </body>
+<!--- Kudos to Khan Academy for the Processing.JS code! --->
+
+ <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+ 
+ <script>
+    var khanProject = function(processingInstance) {
+     with (processingInstance) {
+        size(1625,850); 
+        frameRate(60);
+                background(255,255,255);
+        mouseMoved = function() {
+            fill(mouseX-mouseY,mouseY -mouseX,mouseX+mouseY);
+   noStroke();
+            ellipse(mouseX, mouseY, 10, 10)
+        }
+
+
+    }};
+
+    var canvas = document.getElementById("mycanvas"); 
+    var processingInstance = new Processing(canvas, khanProject); 
+ </script>
+
+    </html>
