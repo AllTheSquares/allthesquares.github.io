@@ -3,6 +3,8 @@ import square_inactive from '../assets/logo_inactive.png'
 import square_active from '../assets/logo_active.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+import { faFolder } from "@fortawesome/free-solid-svg-icons";
+import { faShareNodes } from "@fortawesome/free-solid-svg-icons"
 
 import "./topbar.css"
 
@@ -22,9 +24,15 @@ function NavBar () {
                     |
                     <div className = "nav-elements">
                     {/* <a href="#courses">Courses</a> */}
-                    <a href="src/components#tutorials">About</a>
-                    <a href="src/components#jobs">Portfolio</a>
-                    <a href='src/components#student'>Socials</a>
+                    <a href="src/components#tutorials">
+                        <FontAwesomeIcon icon={faCircleInfo}/>  About
+                    </a>
+                    <a href="src/components#jobs">
+                        <FontAwesomeIcon icon={faFolder}/> Portfolio
+                    </a>
+                    <a href='src/components#student'>
+                        <FontAwesomeIcon icon={faShareNodes} /> Socials
+                    </a>
                     </div>
                 </div>
             </nav>
