@@ -1,0 +1,90 @@
+.navbar {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 12px;
+    position: sticky;
+    cursor: pointer;
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 0px;
+
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a{
+    float: left;
+    padding: 0% 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    transition: opacity .3s, transform .1s ease-in-out, color .2s;
+}
+
+.logo {
+    position: relative;
+    transform: translateY(3px);
+    color: rgb(255, 255, 255);
+}
+
+.logo img {
+    width: 50px;
+    transition: opacity .3s;
+}
+
+.logo #default {
+    position:relative;
+}
+
+.logo #onHover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.logo:hover #onHover{
+    opacity: 1;
+    filter: drop-shadow(0px 0px 5px #0095ff);
+}
+.logo:hover #default{
+    opacity: 0;
+}
+
+.logo:hover #text {
+    color: #0095ff;
+}
+
+.logo #text {
+    float: right;
+    margin-top: 7%;
+    margin-left: 10px;
+    position:relative;
+    color: rgb(255, 255, 255);
+    transition: color 0.1s
+}
+
+.logo:active{
+    transition: transform .05s;
+    transform: translateY(3px) scale(0.95);
+}
+
+.logo:active #text{
+    color:#0095ffc7
+}
+
+.nav-list a:hover{
+    transform:translateY(-2px);
+}
+
+.nav-elements a:active{
+    color: #4f9ecf;
+    transform:translateY(1px)
+}
