@@ -1,4 +1,6 @@
+# Jetbrains idea-based ide's
 .idea/
-.node_modules/
 
+# Node modules. Just drilling it in. I don't know what the proper convention is.
+.node_modules/
 node_modules/
