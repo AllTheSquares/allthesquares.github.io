@@ -4,5 +4,18 @@
 }
 
 body {
+    background: #1a1a1a;
     color:black;
+    height:100vh;
+}
+
+
+
+.quote {
+    color: #ffffff;
+    font-size: 32px;
+    font-family: 'Lexend Deca', sans-serif;
+
+    padding:50px;
+    text-align: center;
 }
