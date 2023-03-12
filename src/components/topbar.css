@@ -4,11 +4,13 @@
     justify-content: space-between;
     padding: 14px 12px;
     position: sticky;
-    cursor: pointer;
     font-family: 'Chakra Petch', sans-serif;
     color: rgb(255, 255, 255);
     margin-top: 0;
+}
 
+#divider {
+    padding: 15px 15px;
 }
 
 .nav-list {
@@ -18,17 +20,21 @@
 }
 
 .nav-list a{
+    border-radius: 5px;
     float: left;
     padding: 0 15px;
     color: rgb(255, 255, 255);
     text-align: center;
     text-decoration: none;
     font-size: 17px;
-    transition: opacity .3s, transform .1s ease-in-out, color .2s;
+    transition: opacity .3s, transform .1s ease-in-out, color .2s, background-color 0.2s ease-out;
+    cursor:none;
 }
 
 .logo {
     position: relative;
+    border-radius:15px;
+    height:50px;
     transform: translateY(3px);
     color: rgb(255, 255, 255);
 }
@@ -63,8 +69,10 @@
 
 .logo #text {
     float: right;
-    margin-top: 7%;
+    bottom:0;
+    top:12px;
     margin-left: 10px;
+    /*margin-right:10px;*/
     position:relative;
     color: rgb(255, 255, 255);
     transition: color 0.1s
@@ -76,13 +84,33 @@
 }
 
 .logo:active #text{
-    color:#0095ffc7
+    color: rgba(0, 122, 210, 0.78)
 }
 
+.logo:hover {
 
+}
 
 .nav-list a:hover{
-    transform:translateY(-2px);
+    /*transform:translateY(-2px);*/
+    transform:scale(1.05);
+}
+
+.nav-elements {
+    cursor:none;
+}
+
+.nav-elements a{
+    margin-right: 1vh;
+    padding:10px 2vh;
+}
+
+.nav-elements:hover > #customCursor {
+    opacity: 1;
+}
+
+.nav-elements a:hover{
+    background-color: #ffffff;
 }
 
 .nav-elements a:active{

@@ -7,6 +7,7 @@ function App() {
 
     useEffect(() => {
         let text_choices = Array(
+            "RAAAAAAAH",
             "WOOOOOOOO!",
             "The Website of the Square, but better.",
             "A work in progress!",
@@ -20,7 +21,10 @@ function App() {
             'Is this thing on?',
             "Test, 1, 2, 3.",
             "308 Negra Arroyo Lane, Albuquerque, New Mexico",
-            "I love Python :)");
+            "I love Python :)",
+            "h",
+            "The quick brown fox jumps over the lazy dog.",
+            "SUBSCRIBE TO DYLSTREAM ON YOUTUBE");
         let select = Math.floor(text_choices.length * Math.random());
         randomText(text_choices[select])
     }, []);

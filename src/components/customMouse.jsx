@@ -3,16 +3,27 @@ import './customMouse.css'
 
 function Mouse() {
     const cursor = useRef(null);
-    // const cursorVisible = useRef(true);
+    const cursorVisible = useRef(false);
     // const cursorLarge = useRef(false);
     //
-    // const editCursorVisibility = () => {
-    //     if (cursorVisible.current) {
-    //         cursor.current.style.opacity = 1;
-    //     } else {
-    //         cursor.current.style.opacity = 0;
-    //     }
-    // }
+
+    const editCursorVisibility = () => {
+        if (cursorVisible.current) {
+            cursor.current.style.opacity = 1;
+        } else {
+            cursor.current.style.opacity = 0;
+        }
+    }
+
+    const event_mouseEnter = () => {
+        cursorVisible.current = true;
+        editCursorVisibility();
+    }
+
+    const event_mouseExit = () => {
+        cursorVisible.current = false;
+        editCursorVisibility();
+    }
 
 
     useEffect(() => {

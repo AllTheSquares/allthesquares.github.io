@@ -8,9 +8,9 @@ import { faShareNodes } from "@fortawesome/free-solid-svg-icons"
 
 import "./topbar.css"
 
+
 function NavBar () {
     return (
-        // <div className='navigation-bar'>
         <>
             <nav className = "navbar">
                 <div className= "nav-list">
@@ -21,18 +21,14 @@ function NavBar () {
                             <div id = "text"><strong>ALLTHESQUARES</strong></div>
                         </div>
                     </a>
-                    |
+
+                    <div id="divider"> | </div>
+
                     <div className = "nav-elements">
                     {/* <a href="#courses">Courses</a> */}
-                    <a href="src/components#tutorials">
-                        <FontAwesomeIcon icon={faCircleInfo}/>  About
-                    </a>
-                    <a href="src/components#jobs">
-                        <FontAwesomeIcon icon={faFolder}/> Portfolio
-                    </a>
-                    <a href='src/components#student'>
-                        <FontAwesomeIcon icon={faShareNodes} /> Socials
-                    </a>
+                    <a href="src/components#tutorials"><FontAwesomeIcon icon={faCircleInfo}/>  About  </a>
+                    <a href="src/components#jobs"><FontAwesomeIcon icon={faFolder}/>  Portfolio  </a>
+                    <a href='src/components#student'><FontAwesomeIcon icon={faShareNodes} />  Socials  </a>
                     </div>
                 </div>
             </nav>

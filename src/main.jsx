@@ -7,7 +7,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <Mouse/>
+        {/*<Mouse/> commented out due to functionality and performance concerns*/}
         <NavBar/>
         <App/>
 

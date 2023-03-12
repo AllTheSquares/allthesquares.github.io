@@ -1,12 +1,9 @@
-* {
-    cursor: none;
-}
 #customCursor{
     z-index: 10000;
     height:15px;
     width:15px;
     border-radius: 15px;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
 
     position: fixed;
     left:0;
@@ -20,14 +17,10 @@
     transition: opacity 250ms ease, transform 100ms ease-out;
 }
 
-*:hover > .customCursor {
-    opacity: 1;
-}
 
-.a:hover > .customCursor {
+
+
+.a:hover > #customCursor {
     opacity:0;
 }
 
-.customCursor:active {
-    transform:scale(0.9);
-}
